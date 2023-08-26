@@ -1,0 +1,82 @@
+$fuente_principal: 'Roboto', sans-serif;
+$primario: #e8505b;
+$secundario: #455a64;
+$negro: #000;
+$blanco: #ffffff;
+$grisClaro: #eceeef;
+
+@import 'formulario.scss';
+@import 'como-funciona.scss';
+@import 'testimonials.scss';
+@import 'restaurantes-favoritos.scss';
+@import 'ganadinero.scss';
+@import 'footer.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $fuente_principal;
+}
+
+.contenedor{
+    max-width: 1200px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header{
+
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+ 
+
+    &__image{
+        width: 320px;
+        height: auto;
+    }
+
+    &__nav{
+ 
+    }
+
+    &__nav__list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 23px; 
+    }
+
+    &__nav__item{
+        list-style: none;
+    
+    }
+
+    &__nav__link{               
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 20px;
+ 
+    }
+
+    &__nav__button{
+        background-color: $primario;
+        color: $blanco;
+        width: 260px;
+        height: 51px;
+        border: none;
+        border-radius: 13px;
+        font-weight: bolder;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

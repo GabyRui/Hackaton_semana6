@@ -1,0 +1,87 @@
+$primario: #e8505b;
+$secundario: #455a64;
+$negro: #000;
+$blanco: #ffffff;
+$grisClaro: #eceeef;
+$restaurante-favorito: rgb(236, 238, 239);
+
+
+.footer{
+
+    background-color: $secundario;
+    color: white;
+
+    &__container{
+
+        display: grid;
+        grid-template-columns: 0.8fr 0.7fr 0.8fr;
+        justify-content: flex-start;
+        gap: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-top: 43px;
+        margin-bottom: 60px;
+    }
+
+    &__nosotros{
+     
+        &__h1{
+            margin-bottom: 17px;
+            font-size: 32px ;
+        }
+
+        &__parrafo{
+            line-height: 35px;
+            font-size: 20px;
+        }
+    }
+
+    &__nav{
+        &__h1{
+            margin-bottom: 17px;
+            font-size: 32px ;
+        }
+
+        &__item{
+            list-style: none;
+            line-height: 35px;
+            font-size: 20px;        
+        }
+    }
+
+    &__contact{
+   
+        &__h1{
+            margin-bottom: 17px;
+            font-size: 32px ;
+        }
+
+        &__parrafo{
+            line-height: 35px;
+            font-size: 20px;
+        }
+    }
+
+
+    &__final{
+        background-color: $primario;
+        padding-top: 23px;
+        padding-bottom: 23px;
+
+        &__h3{
+            color: $blanco;
+            font-size: 19.5px;
+            font-weight: 200;
+            text-align: center;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+

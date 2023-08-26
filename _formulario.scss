@@ -1,0 +1,97 @@
+$primario: #e8505b;
+$secundario: #455a64;
+$negro: #000;
+$blanco: #ffffff;
+$grisClaro: #eceeef;
+
+
+.contenedor{
+    width: 1200px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.form{
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+    &__section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    &__div{
+        border: $primario;
+        background-color: $primario;
+        width: 550px;
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__h1{
+            color: white;
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    .form__food{
+
+        
+        &__label__restaurant{
+            color: $blanco;
+            font-size: 17px;
+            font-weight: 400;
+
+        :focus{
+            border: #000;
+        }
+
+        }
+
+
+        &__input__restaurant{
+            width: 450px;
+            height: 48px;
+            border: none;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            font-family: $fuente_principal;
+        }
+
+        &__text{
+            ::placeholder{
+                margin-left: 30px;
+            }
+        }
+
+        &__button{
+            color: white;
+            background-color: $secundario;
+            font-size: 20px;
+            font-weight: bolder;
+            height: 30px;
+            margin-top: 20px;
+            width: 450px;
+            height: 48px;
+            border-radius: 10px;
+            border: none;
+        }
+
+    }
+
+
+
+    .form__image{
+        width: 530px;
+    }
+}

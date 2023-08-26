@@ -1,0 +1,72 @@
+$primario: #e8505b;
+$secundario: #455a64;
+$negro: #000;
+$blanco: #ffffff;
+$grisClaro: #eceeef;
+$restaurante-favorito: rgb(236, 238, 239);
+
+
+.favorite{
+    background-color: $restaurante-favorito;
+    margin-top: 70px;
+    padding-bottom: 60px;
+    width: 100%;
+
+    &__h1{
+        font-size: 35px;
+        text-align: center;
+        color: $secundario;
+        padding-top: 60px;
+        margin-bottom: 55px;
+    }
+}
+
+.favorite__all__container{
+    display: grid;
+    grid-template-columns: repeat(2, 0.45fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 40px;
+    align-content: center;
+    justify-content: center;
+}
+
+.favorite__container{
+    background-color: white;
+    width: 580px;
+    border-radius: 13px;
+    box-shadow: 0 0 20px rgba($color: #bdbdbd, $alpha: 3.0);
+    width: 540px;
+}
+
+.favorite__container__card{
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+
+    &__image{
+        width: 100px;
+        height: 100px;
+    }
+
+    &__content{
+
+        &__image{
+            width: 200px;
+            margin-bottom: 8px;
+        }
+
+        &__h2{
+            color:$primario;
+            margin-bottom: 13px;
+        }
+
+        &__text{
+            color: $negro;
+            line-height: 25px;
+        }
+    }
+}
